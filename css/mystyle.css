@@ -10,9 +10,9 @@ body{
 #my-output-pali{
     width: 200px;
     height: 50px;
+    line-height: 50px;
     color: red;
     background-color: yellow;
-    vertical-align: middle;
     text-align: center;
     
 }
