@@ -1,4 +1,4 @@
-/* From html */
+//# Check palindroma word
 function checkPali(arrayOfChar){
     for(let i = 0; i<arrayOfChar.length; i++){
         for(let c = arrayOfChar.length -1 ; c < arrayOfChar.length ; c-- ){
@@ -24,7 +24,6 @@ btnCheck.addEventListener("click",function(){
 });
 
 
-
 // % PARI O DISPARI 
 function randomNumber(max,min){
     return(Math.floor(Math.random() * (max - min) - min));
@@ -37,8 +36,6 @@ function evenOdd(number){
     
     return false;
 }
-
-
 
 const btnPlay = document.getElementById("my-btn-play");
 btnPlay.addEventListener("click",function(){
