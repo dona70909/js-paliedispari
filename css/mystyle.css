@@ -4,7 +4,7 @@ body{
 
 /* % Palindromo  */
 .my-pali-bg{
-    background-color: rgb(173, 212, 230);
+    background-color: rgb(250, 196, 252);
 }
 
 #my-output-pali{
@@ -36,7 +36,7 @@ body{
 }
 
 .my-box-blue{
-    background-color: rgb(32, 19, 218);
+    background-color: rgb(108, 172, 255);
 }
 
 .my-box-red{
