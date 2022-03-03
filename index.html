@@ -48,19 +48,23 @@
             <div class="row justify-content-center p-4">
 
                 <div class="col-12 mb-4">
-                    <label class="text-uppercase mb-1" for="my-select">Scegli: Pari o Dispari?</label>
 
-                    <select id="my-select" class="form-control form-control-lg mb-2">
-                        <option value="Pari" id="choice-even">Pari</option>
-                        <option value="Dispari" id="choice-odd">Dispari</option>
-                    </select>
+                    <form action="" id="reset">
+                        <label class="text-uppercase mb-1" for="my-select">Scegli: Pari o Dispari?</label>
 
-                    <label class="text-uppercase" for="my-number">Inserisci un numero tra 1 e 5</label>
-                    <input type="text" id="my-number">
+                        <select id="my-select" class="form-control form-control-lg mb-2">
+                            <option value="Pari" id="choice-even">Pari</option>
+                            <option value="Dispari" id="choice-odd">Dispari</option>
+                        </select>
+    
+                        <label class="text-uppercase" for="my-number">Inserisci un numero tra 1 e 5</label>
+                        <input type="text" id="my-number">
+                    </form>
                 </div>
 
                 <div class="col-12">
                     <button class="btn btn-danger" id="my-btn-play"> Gioca</button>
+                    <button class="btn btn-warning" id="my-btn-reset">Reset</button>
                 </div>
 
                 <div class="col-12 me-2 my-pc-number my-box my-box-bg" id="pc-number-output">

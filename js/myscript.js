@@ -26,7 +26,7 @@ btnCheck.addEventListener("click",function(){
 
 // % PARI O DISPARI 
 function randomNumber(max,min){
-    return(Math.floor(Math.random() * (max - min) - min));
+    return(Math.floor(Math.random() * max + min));
 }
 
 function evenOdd(number){
@@ -43,9 +43,9 @@ btnPlay.addEventListener("click",function(){
     let myselect = document.getElementById("my-select");
     let choice = myselect.value;
     
-    const userNumber = document.getElementById("my-number").value;
+    let userNumber = document.getElementById("my-number").value;
     
-    const pcNumberPrint = document.getElementById("pc-number-output");
+    let pcNumberPrint = document.getElementById("pc-number-output");
 
     if((userNumber >= 1) && (userNumber <= 5)){
         const pcNumberValue = randomNumber(5,1);
@@ -67,3 +67,8 @@ btnPlay.addEventListener("click",function(){
     }
     
 })
+
+const btnReset = document.getElementById("my-btn-reset");
+btnReset.addEventListener("click",function(){
+    document.getElementById("reset").reset();
+});
