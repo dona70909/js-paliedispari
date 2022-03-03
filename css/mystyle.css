@@ -1,3 +1,7 @@
+/* % Palindromo  */
+.my-pali-bg{
+    background-color: lightblue;
+}
 
 #my-output-pali{
     width: 200px;
@@ -8,8 +12,9 @@
     text-align: center;
 }
 
-#my-score{
-    background-color: red;
+/* & Even or odd style */
+.my-even-odd-bg{
+    background-color: aquamarine;
 }
 
 .my-box{
@@ -20,3 +25,9 @@
 .my-box-bg{
     background-color: lightblue;
 }
+
+#my-score{
+    background-color: red;
+}
+
+
