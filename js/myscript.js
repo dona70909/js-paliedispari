@@ -12,18 +12,28 @@ function checkPali(arrayOfChar){
     }
 }
 
+//# play button
 const btnCheck = document.getElementById("my-btn-check");
-console.log(btnCheck);
 btnCheck.addEventListener("click",function(){
+
     const userWord = document.getElementById("my-input");
     const arrayChar = [];
+
     for(let i = 0; i<userWord.value.length; i++){
         arrayChar.push(userWord.value.at(i));
     }
-    document.getElementById("my-output-pali").innerHTML = checkPali(arrayChar);
+
+    if(arrayChar.length == 0){
+        document.getElementById("my-output-pali").innerHTML = "Campo vuoto";
+    } else {
+        document.getElementById("my-output-pali").innerHTML = checkPali(arrayChar);
+    }
+    
 });
 
 
+
+//#reset button
 const btnResetCheck = document.getElementById("my-btn-reset-check");
 btnResetCheck.addEventListener("click",function(){
     document.getElementById("my-check-reset").reset();
@@ -44,6 +54,7 @@ function evenOdd(number){
     return false;
 }
 
+//% play button
 const btnPlay = document.getElementById("my-btn-play");
 btnPlay.addEventListener("click",function(){
     
@@ -53,7 +64,7 @@ btnPlay.addEventListener("click",function(){
     let userNumber = document.getElementById("my-number").value;
     
     let pcNumberPrint = document.getElementById("pc-number-output");
-
+    
     if((userNumber >= 1) && (userNumber <= 5)){
         const pcNumberValue = randomNumber(5,1);
         pcNumberPrint.innerHTML = (pcNumberValue) + " <br>";
@@ -75,12 +86,13 @@ btnPlay.addEventListener("click",function(){
     
 })
 
+//% reset button
 const btnReset = document.getElementById("my-btn-reset");
 btnReset.addEventListener("click",function(){
     document.getElementById("reset").reset();
     let pcNumberPrint = document.getElementById("pc-number-output");
     pcNumberPrint.value = "";
     pcNumberPrint.innerHTML = "";
-
+    
     document.getElementById("my-score").innerHTML = "Gioca...";
 });
