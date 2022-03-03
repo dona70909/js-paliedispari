@@ -28,12 +28,7 @@ btnCheck.addEventListener("click",function(){
 
 // % PARI O DISPARI 
 
-let myselect = document.getElementById("my-select");
-let choice = myselect.value;
 
-const userNumber = document.getElementById("my-number").value;
-
-const pcNumberPrint = document.getElementById("pc-number-output");
 
 
 function randomNumber(max,min){
@@ -48,18 +43,35 @@ function evenOdd(number){
     return false;
 }
 
-if((userNumber >= 1) && (userNumber <= 5)){
-    const pcNumberValue = randomNumber(5,1);
-    pcNumberPrint.innerHTML = (pcNumberValue);
-    let sum = userNumber + pcNumberValue;
-    evenOdd(sum);
+
+
+const btnPlay = document.getElementById("my-btn-play");
+btnPlay.addEventListener("click",function(){
     
-    if((evenOdd == true) && (choice.value == "Pari")){
-        document.getElementById("my-score").innerHTML == "Hai vinto";
-    } else if ((evenOdd == false) && (choice.value == "Dispari")){
+    let myselect = document.getElementById("my-select");
+    let choice = myselect.value;
+    
+    const userNumber = document.getElementById("my-number").value;
+    
+    const pcNumberPrint = document.getElementById("pc-number-output");
+
+    if((userNumber >= 1) && (userNumber <= 5)){
+        const pcNumberValue = randomNumber(5,1);
+        pcNumberPrint.innerHTML = (pcNumberValue) + " <br>";
+        pcNumberPrint.innerHTML += " Pc number";
+        let sum = userNumber + pcNumberValue;
+        evenOdd(sum);
         
-        document.getElementById("my-score").innerHTML ="Hai vinto";
+        if((evenOdd == true) && (choice.value == "Pari")){
+            document.getElementById("my-score").innerHTML == "Hai vinto";
+        } else if ((evenOdd == false) && (choice.value == "Dispari")){
+            
+            document.getElementById("my-score").innerHTML ="Hai vinto";
+        } else {
+            document.getElementById("my-score").innerHTML = "Hai perso";
+        }
     } else {
-        document.getElementById("my-score").innerHTML = "Hai perso";
+        document.getElementById("my-score").innerHTML = "Errore inserisci numero <br> tra 1 e 5 ";
     }
-}
+    
+})
