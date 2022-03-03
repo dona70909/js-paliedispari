@@ -1,4 +1,3 @@
-
 /* From html */
 function checkPali(arrayOfChar){
     for(let i = 0; i<arrayOfChar.length; i++){
@@ -27,10 +26,6 @@ btnCheck.addEventListener("click",function(){
 
 
 // % PARI O DISPARI 
-
-
-
-
 function randomNumber(max,min){
     return(Math.floor(Math.random() * (max - min) - min));
 }
