@@ -27,7 +27,7 @@ btnCheck.addEventListener("click",function(){
 const btnResetCheck = document.getElementById("my-btn-reset-check");
 btnResetCheck.addEventListener("click",function(){
     document.getElementById("my-check-reset").reset();
-    document.getElementById("my-output-pali").innerHTML = "inserisci il nome";
+    document.getElementById("my-output-pali").innerHTML = "inserisci una parola";
 });
 
 
