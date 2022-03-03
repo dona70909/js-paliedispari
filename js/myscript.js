@@ -23,9 +23,9 @@ function checkPali(arrayOfChar){
     }
 }
 
-console.log(checkPali(arrayChar));
+document.getElementById("my-output-pali").innerHTML = checkPali(arrayChar);
 
-/* pari o dispari */
+// % PARI O DISPARI 
 
 let myselect = document.getElementById("my-select");
 let choice = myselect.value;
