@@ -61,9 +61,6 @@ btnPlay.addEventListener("click",function(){
     let myselect = document.getElementById("my-select");
     let choice = myselect.value;
     console.log(choice + " choice");
-/* 
-    const even = document.getElementById("choice-even").value;
-    const odd = document.getElementById("choice-odd").value; */
     
     // & prendo il numero inserito dall'utente
     let userNumber = parseInt(document.getElementById("my-number").value);
@@ -80,8 +77,6 @@ btnPlay.addEventListener("click",function(){
     
         console.log(evenOddSum(userNumber + pcNumberValue) + " valore somma");
         
-        /* const even = "even";
-        const odd = "odd"; */
         if((checkSum) && (choice === "Pari")){
             document.getElementById("my-score").innerHTML = "Hai vinto";
             console.log(evenOddSum(userNumber + pcNumberValue) + " ++ true pari");
