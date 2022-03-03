@@ -16,10 +16,10 @@ function checkPali(arrayOfChar){
 const btnCheck = document.getElementById("my-btn-check");
 console.log(btnCheck);
 btnCheck.addEventListener("click",function(){
-    const userWord = document.getElementById("my-input").value;
+    const userWord = document.getElementById("my-input");
     const arrayChar = [];
-    for(let i = 0; i<userWord.length; i++){
-        arrayChar.push(userWord.at(i));
+    for(let i = 0; i<userWord.value.length; i++){
+        arrayChar.push(userWord.value.at(i));
     }
     document.getElementById("my-output-pali").innerHTML = checkPali(arrayChar);
 });
