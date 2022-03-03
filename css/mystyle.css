@@ -4,7 +4,7 @@ body{
 
 /* % Palindromo  */
 .my-pali-bg{
-    background-color: lightblue;
+    background-color: rgb(173, 212, 230);
 }
 
 #my-output-pali{
@@ -23,19 +23,25 @@ body{
 }
 
 .my-box{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     vertical-align: middle;
     text-align: center;
     border-radius: 10%;
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
-.my-box-bg{
+.my-box-blue{
     background-color: rgb(32, 19, 218);
 }
 
-#my-score{
+.my-box-red{
     background-color: red;
 }
+
 
 
