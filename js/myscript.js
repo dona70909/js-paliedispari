@@ -78,4 +78,9 @@ btnPlay.addEventListener("click",function(){
 const btnReset = document.getElementById("my-btn-reset");
 btnReset.addEventListener("click",function(){
     document.getElementById("reset").reset();
+    let pcNumberPrint = document.getElementById("pc-number-output");
+    pcNumberPrint.value = "";
+    pcNumberPrint.innerHTML = "";
+
+    document.getElementById("my-score").innerHTML = "Gioca...";
 });
