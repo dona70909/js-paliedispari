@@ -25,10 +25,35 @@
 
     <main>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-12">
                     <label for="my-input">Inserisci una parola</label>
                     <input type="text" id="my-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+
+                <div class="col-12 mb-4">
+                    <label class="mb-1" for="my-select">Scegli: Pari o Dispari?</label>
+
+                    <select id="my-select" class="form-control form-control-lg mb-2">
+                        <option value="Pari" id="choice-even">Pari</option>
+                        <option value="Dispari" id="choice-odd">Dispari</option>
+                    </select>
+
+                    <label for="my-number">Inserisci un numero</label>
+                    <input type="text" id="my-number">
+                </div>
+
+                <div class="col-12 me-2 my-pc-number my-box my-box-bg" id="pc-number-output">
+                    
+                </div>
+
+                <div class="col-12 my-pc-number my-box" id="my-score">
+
                 </div>
             </div>
         </div>
