@@ -24,6 +24,12 @@ btnCheck.addEventListener("click",function(){
 });
 
 
+const btnResetCheck = document.getElementById("my-btn-reset");
+btnResetCheck.addEventListener("click",function(){
+    document.getElementById("my-check-reset").reset();
+});
+
+
 // % PARI O DISPARI 
 function randomNumber(max,min){
     return(Math.floor(Math.random() * max + min));
