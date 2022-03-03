@@ -61,7 +61,7 @@ btnPlay.addEventListener("click",function(){
     let myselect = document.getElementById("my-select");
     let choice = myselect.value;
     
-    let userNumber = document.getElementById("my-number").value;
+    let userNumber = parseInt(document.getElementById("my-number").value);
     
     let pcNumberPrint = document.getElementById("pc-number-output");
     
