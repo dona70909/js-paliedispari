@@ -67,8 +67,7 @@ btnPlay.addEventListener("click",function(){
     
     if((userNumber >= 1) && (userNumber <= 5)){
         const pcNumberValue = randomNumber(5,1);
-        pcNumberPrint.innerHTML = (pcNumberValue) + " <br>";
-        pcNumberPrint.innerHTML += " Pc number";
+        pcNumberPrint.innerHTML = (pcNumberValue) + "<br>Pc number";
         let sum = userNumber + pcNumberValue;
         evenOdd(sum);
         
